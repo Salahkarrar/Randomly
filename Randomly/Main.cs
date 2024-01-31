@@ -71,6 +71,7 @@ namespace Randomly
                 }
                 else if (Edit_Btn.Text == "Update")
                 {
+                    Date_Txt.Text = DateTime.Now.ToString("G");
                     Edit(true, false);
                     New_Btn.Enabled = true;
                     Edit_Ico(Edit_Btn, "Edit", Resources.Dark_Edit_18);
