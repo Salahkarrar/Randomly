@@ -1433,7 +1433,8 @@ namespace Randomly.RandomSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, Websites, UserName, Pass, DateChange FROM T_PassManger";
+            this._commandCollection[0].CommandText = "SELECT    ID, Websites, UserName, Pass, DateChange\r\nFROM         T_PassManger\r\nOR" +
+                "DER BY ID";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1845,7 +1846,7 @@ namespace Randomly.RandomSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, UserName, Pass, RoleID FROM T_Users";
+            this._commandCollection[0].CommandText = "SELECT    ID, UserName, Pass, RoleID\r\nFROM         T_Users\r\nORDER BY ID";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
