@@ -213,6 +213,11 @@ namespace Randomly
         {
             Random_Btn_Click(sender, e);
         }
+
+        private void Main_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 
 
